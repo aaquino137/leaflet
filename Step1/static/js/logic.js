@@ -70,8 +70,8 @@ let legend = L.control({
 legend.onAdd = function(){
     let container = L.DomUtil.create("div", "info legend");
     let grades = [-10, 10, 30, 50, 70, 90];
-    let colors = ['#98ee00', '#d4ee00', '#eecc00', '#ee9c00', '#ea822c', '#ea2c2c']
-    for(let index = 0; i <Grades.length; i++) {
+    let colors = ['#98ee00', '#d4ee00', '#eecc00', '#ee9c00', '#ea822c', '#ea2c2c'];
+    for(let index = 0; index <grades.length; index++) {
         container.innerHTML += `<i style= "background: ${colors[index]}"></i> ${grades[index]}+ <br>`
     }
     return container;
